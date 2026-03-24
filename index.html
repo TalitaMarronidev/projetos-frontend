@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <title>Talita Marroni</title>
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="flex">
+        <div class="menu-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="  logo">
+          <a href="#">Meu Portfólio</a>
+        </div><!--logo-->
+        <nav class="menu">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav><!--menu-->
+
+        <a href="#contato" class="contato">Contato</a>
+      </div>
+    </div><!--interface-->
+  </header>
+  <main>
+    <section class="topo-do-site" id="inicio">
+      <div class="topo-site">
+        <h1>TRANSFORMANDO IDEIAS EM REALIDADE VIRTUAL&nbsp;<span class="ponto">.</span></h1>
+        <br><br>
+        <p>Criatividade e inovação andam lado a lado.Com uma combinação única de design impactante,
+          funcionalidade intuitiva e otimização para resultados, estou pronta para criar a
+          presença online dos seus sonhos.</p>
+
+        <a href="#contato" class="entre-contato">Entre em contato</a>
+      </div>
+
+     <img class="img-topo-site" src="./imgs/foto.jpg" alt="">
+
+
+    </section>
+
+    <section class="especialidades" id="especialidades">
+      <div class="interface">
+        <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+        <div class="flex">
+          <div class="container-box">
+          <div class="especialidades-box">
+            <img class="icon" src="./imgs/html.png" alt="">
+            <h3>HTML</h3>
+            <p>Linguagem de Marcação de Hipertexto.</p>
+          </div>
+
+          <div class="especialidades-box">
+            <img class="icon" src="./imgs/css.png" alt="">
+            <h3>CSS</h3>
+            <p>Linguagem de estilização.</p>
+          </div>
+
+          <div class="especialidades-box">
+            <img class="icon" src="./imgs/js.png" alt="">
+            <h3>JAVASCRIPT</h3>
+            <p>Linguagem de Programação.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="./imgs/foto2.jpg" alt="">
+          </div>
+          <div class="txt-sobre">
+            <h2>MUITO PRAZER, <span>SOU TALITA MARRONI.</span></h2>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi aperiam, sint quisquam sit
+              quibusdam voluptate delectus aliquam deserunt autem. Cumque quasi odio laborum minima.</P>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint ut doloremque amet quam id accusamus qui
+              fugiat. Error, exercitationem.</p>
+            <div class="btn-social">
+              <a href="https://www.instagram.com/talita_marroni/"><button><i class="bi bi-instagram"></i></button></a>
+              <a href="https://www.linkedin.com/in/talita-marroni-877a703a0/"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="https://github.com/TalitaMarronidev"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="projetos">
+      <div class="interface">
+        <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+        <div class="flex">
+          <div class="img-port img1">
+            <div class="overlay">Projeto 1</div>
+          </div>
+          <div class="img-port img2">
+               <div class="overlay">Projeto 2</div>
+          </div>
+          <div class="img-port img3">
+               <div class="overlay">Projeto 3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario" id="contato">
+      <div class="interface">
+            <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+            <form action="">
+              <input type="text" name="" id="" placeholder="Seu nome:" required>
+               <input type="email" name="" id="" placeholder="Seu e-mail:" required>
+                <input type="tel" name="" id="" placeholder="Seu celular:" required>
+                <textarea name="" id="" placeholder="Sua Mensagem:" required></textarea>
+                <div class="btn-enviar">
+                  <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="rodape">
+          <nav class="menu">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+          
+        
+        </nav><!--menu-->
+        <br><br>
+          <hr class="linha">
+          <br><br>
+          
+          <p>&copy; Desenvolvido por<a class="git" href="https://www.github.com/"> Talita Marroni</a></p>
+    </section>
+  </footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('header .menu');
+  const main = document.querySelector('main');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    main.classList.toggle('menu-aberto');
+  });
+</script>
+</body>
+
+</html>
